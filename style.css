@@ -258,7 +258,7 @@ hr {
 .card {
     border: ridge #d4c4ca;
     padding: 20px;
-    box-shadow: 12px 8px 10px 0 rgba(15, 12, 12, 0.2);
+    box-shadow: 25px 25px 25px 0 rgba(15, 12, 12, 0.2);
     background-color: rgb(194, 172, 144);
 }
 
