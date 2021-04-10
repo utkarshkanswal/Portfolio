@@ -181,8 +181,7 @@ hr {
     border-radius: 25px;
     border: 2px solid #0000002a;
     text-align: center;
-    /* margin-left: 100px;
-    margin-top: 120px; */
+    margin: auto;
 
 }
 
@@ -258,17 +257,15 @@ hr {
 .card {
     border: ridge #d4c4ca;
     padding: 20px;
+    margin: auto;
     box-shadow: 25px 25px 25px 0 rgba(15, 12, 12, 0.2);
     background-color: rgb(194, 172, 144);
+    margin-top: 30px;
 }
 
 .card .top {
     display: flex;
     justify-content: space-between;
-}
-
-.Experience .container .card {
-    margin-top: 80px;
 }
 
 .Experience .container .card .company {
@@ -450,6 +447,21 @@ footer span a:hover {
 }
 
 @media(max-width:450px) {
+    .brand-title {
+        font-size: 1rem;
+        margin: .5rem;
+        font-weight: 600;
+        margin-left: 140px;
+        color: rgb(233, 222, 222);
+    }
+
+    .brand-title a {
+        font-size: 2rem;
+        text-decoration: none;
+        color: rgb(228, 222, 222);
+        margin-left: 40px;
+    }
+
     .toggle-button {
         display: flex;
     }
@@ -521,7 +533,7 @@ footer span a:hover {
 
     .card {
         border: ridge #d4c4ca;
-        box-shadow: 12px 8px 10px 0 rgba(15, 12, 12, 0.2);
+        box-shadow: 20px 20px 20px 0 rgba(15, 12, 12, 0.2);
         background-color: rgb(194, 172, 144);
         display: flex;
         flex-direction: column;
@@ -535,15 +547,9 @@ footer span a:hover {
         justify-content: space-between;
     }
 
-    .Experience .container .card {
-        margin-top: 80px;
-
-    }
 
     .Experience .container .card .company {
         display: flex;
-
-
     }
 
     .Experience .container .card img {
@@ -596,17 +602,17 @@ footer span a:hover {
     }
 
     .Project .container .card .other {
-        /* padding: 20px; */
+        padding: 20px;
         max-width: 100%;
     }
 
     .Project .container .card .other .github a {
         text-decoration: none;
         color: black;
-        /* padding-left: 20px; */
+        padding: 0;
     }
 
-    .Project .container .card .other .duration p li {
+    .Project .container .card .other .duration {
         padding: 0px;
         margin: 0px;
     }
@@ -633,13 +639,11 @@ footer span a:hover {
 
     .Project .container .card .content ul {
         margin: 0;
-        padding: 5px;
+        padding: 0;
     }
 
     .Education .container .card .college {
-        max-width: 70%;
-        display: flex;
-        flex-direction: column;
+        padding: 3px;
         font-size: 13px;
 
     }
