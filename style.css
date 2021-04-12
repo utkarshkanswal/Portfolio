@@ -349,7 +349,9 @@ hr {
 
 .Project .container .card img {
     max-width: 70%;
-    padding-top: 50px;
+    margin-top: 50px;
+    box-shadow: 15px 15px 15px 15px rgba(10, 10, 10, 0.2);
+
 }
 
 .Project .container .card .other {
@@ -392,6 +394,10 @@ hr {
 
 }
 
+.Education .container .card {
+    height: 450px;
+}
+
 /* Achievement Section */
 .Achievement .container {
     flex-wrap: wrap;
@@ -401,6 +407,7 @@ hr {
 .Achievement .container .card {
     margin-top: 30px;
     max-width: 43%;
+    height: 300px;
 }
 
 .Achievement .container .card h2 {
@@ -672,6 +679,10 @@ footer span a:hover {
         padding: 0;
     }
 
+    .Education .container .card {
+        height: auto;
+    }
+
     .Education .container .card .college {
         padding: 3px;
         font-size: 13px;
@@ -715,6 +726,7 @@ footer span a:hover {
         flex-direction: column;
         justify-content: space-between;
         margin-top: 20px;
+        height: auto;
     }
 
     .contact .container {
