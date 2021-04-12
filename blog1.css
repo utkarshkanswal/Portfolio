@@ -9,9 +9,12 @@ body {
 .navbar {
     display: flex;
     background-color: rgb(69, 111, 146);
-
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 
 .brand-title {
@@ -64,6 +67,30 @@ body {
     color: #c3865e;
 }
 
+.sticky {
+    display: flex;
+    background-color: rgb(143, 78, 72);
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 5px 45px; */
+}
+
+.sticky .brand-title span {
+    color: rgb(17, 17, 17);
+
+}
+
+.sticky .navbar-link li a:hover {
+    background-color: rgb(86, 135, 168);
+    color: rgb(228, 221, 221);
+}
+
+.sticky .navbar-link span {
+    margin-right: 12px;
+    /* color: rgb(33, 71, 102); */
+    color: #272626;
+}
+
 .toggle-button {
     position: absolute;
     top: .75rem;
@@ -89,7 +116,7 @@ body {
     margin: auto;
     box-shadow: 25px 25px 25px 0 rgba(15, 12, 12, 0.2);
     background-color: rgb(194, 172, 144);
-    margin-top: 50px;
+    margin-top: 200px;
     margin-bottom: 100px;
 }
 
@@ -101,6 +128,7 @@ body {
     margin: 0;
     margin-top: 20px;
     color: rgb(44, 43, 43);
+    font-size: 22px;
 }
 
 .container .title span {
@@ -113,6 +141,7 @@ body {
     margin-left: 0;
     padding: 0;
     text-align: left;
+    font-size: 13px;
 }
 
 .container .tags span {
@@ -124,12 +153,16 @@ body {
     margin-left: 5px;
 }
 
+.container .content span {
+    font-weight: 600;
+}
+
 @media(max-width:450px) {
     .brand-title {
         font-size: 1rem;
         margin: .5rem;
         font-weight: 600;
-        margin-left: 140px;
+        margin-left: 15px;
         color: rgb(233, 222, 222);
     }
 
@@ -166,4 +199,32 @@ body {
     .navbar-link.active {
         display: flex;
     }
+
+    .container {
+        margin: 20px;
+        margin-top: 100px;
+
+    }
+
+    .container .tags {
+        display: flex;
+        margin-left: 0;
+        padding: 0;
+        text-align: left;
+        font-size: 13px;
+    }
+
+    .container .tags span {
+        border: black 2px;
+        background-color: rgb(136, 132, 132);
+        border-radius: 5px;
+        text-align: left;
+        padding: 0px;
+        margin-left: 5px;
+    }
+
+    .container .content span {
+        font-weight: 600;
+    }
+
 }

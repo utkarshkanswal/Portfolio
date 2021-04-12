@@ -46,9 +46,12 @@ hr {
 .navbar {
     display: flex;
     background-color: rgb(69, 111, 146);
-
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 
 .brand-title {
@@ -101,6 +104,30 @@ hr {
     color: #c3865e;
 }
 
+.sticky {
+    display: flex;
+    background-color: rgb(143, 78, 72);
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 5px 45px; */
+}
+
+.sticky .brand-title span {
+    color: rgb(17, 17, 17);
+
+}
+
+.sticky .navbar-link li a:hover {
+    background-color: rgb(86, 135, 168);
+    color: rgb(228, 221, 221);
+}
+
+.sticky .navbar-link span {
+    margin-right: 12px;
+    /* color: rgb(33, 71, 102); */
+    color: #272626;
+}
+
 .toggle-button {
     position: absolute;
     top: .75rem;
@@ -120,6 +147,9 @@ hr {
 }
 
 /********************* About Us  ***********************************************/
+.About {
+    margin-top: 100px;
+}
 
 .intro {
     display: flex;
